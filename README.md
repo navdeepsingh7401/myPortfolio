@@ -17,7 +17,7 @@ A responsive personal portfolio introducing Navdeep Singh, a BCA Artificial Inte
 
 ### Mobile
 
-![Portfolio displayed on a mobile phone](assets/img/mobile%20view.png)
+<img src="assets/img/mobile%20view.png" alt="Portfolio displayed on a mobile phone" width="320">
 
 ## Built with
 
