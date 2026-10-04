@@ -19,132 +19,61 @@
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#" aria-label="Orbit home">
-        <span class="brand-mark">NS</span>
-        <span>NavdeepSingh</span>
-      </a>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a class="active" href="#profile">Profile</a>
-        <a href="#work">Work</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#articles">Articles</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button
-        class="icon-button"
-        id="themeButton"
-        aria-label="Switch color theme"
-        title="Switch color theme"
-      >
-        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="4"></circle>
-          <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
-        </svg>
-        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"></path>
-        </svg>
-      </button>
+      <div class="nav-shell">
+        <nav class="main-nav" aria-label="Main navigation">
+          <a class="active" href="#profile">Profile</a>
+          <a href="#work">Work</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#articles">Articles</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="icon-button"
+          id="themeButton"
+          aria-label="Switch color theme"
+          title="Switch color theme"
+        >
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"></path>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5 8.5 8.5 0 1 0 20.5 14.5Z"></path>
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main class="page-shell" id="profile">
       <section class="profile-hero" aria-labelledby="profileName">
-        <div class="cover-art">
-          <img src="assets/img/poster.png" alt="Navdeep Singh profile banner" />
-        </div>
-
-        <div class="profile-content">
-          <div class="avatar">
-            <img src="assets/img/profile.jpg" alt="Navdeep Singh" />
-            <span class="status-dot" title="Available"></span>
-          </div>
-
-          <div class="profile-main">
-            <div class="title-row">
-              <div>
-                <p class="eyebrow">
-                  BCA AI & ML student · Developer in progress
-                </p>
-                <h1 id="profileName">Navdeep Singh</h1>
-                <p class="handle">@navdeep-singh</p>
-              </div>
-              <div class="profile-actions">
-                <button class="button button-secondary" id="messageButton">
-                  Message
-                </button>
-              </div>
-            </div>
-
-            <p class="bio" id="profileBio">
-              I’m pursuing a BCA in
-              <strong>Artificial Intelligence and Machine Learning</strong> at
-              Chitkara University. I learn by building projects, earning
-              certifications and sharing what I discover.
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="eyebrow">BCA AI &amp; ML Student</p>
+            <h1 id="profileName">Navdeep Singh</h1>
+            <p class="hero-mantra">Building <span aria-hidden="true">·</span> Learning <span aria-hidden="true">·</span> Experimenting</p>
+            <p class="hero-description">
+              I’m exploring AI, Machine Learning and software development through
+              projects and experiments.
             </p>
-
-            <div class="meta-list">
-              <span class="university-meta">
-                <lord-icon
-                  class="university-icon"
-                  src="https://cdn.lordicon.com/vvyxyrur.json"
-                  state="in-reveal"
-                  aria-hidden="true"
-                ></lord-icon>
-                Chitkara University
-              </span>
+            <!-- <div class="hero-actions">
+              <a class="button button-primary" href="#work">View Work</a>
               <a
-                class="linkedin-meta"
+                class="button button-secondary"
                 href="https://www.linkedin.com/in/navdeep-singh-51b573356/"
                 target="_blank"
                 rel="noreferrer"
-                ><lord-icon
-                  src="https://cdn.lordicon.com/kdduutaw.json"
-                  trigger="hover"
-                  target=".linkedin-meta"
-                  aria-hidden="true"
-                ></lord-icon>
-                LinkedIn profile</a
+                >LinkedIn <span aria-hidden="true">↗</span></a
               >
-              <span class="learning-meta">
-                <lord-icon
-                  src="https://cdn.lordicon.com/warimioc.json"
-                  trigger="hover"
-                  target=".learning-meta"
-                  aria-hidden="true"
-                ></lord-icon>
-                Always learning
-              </span>
-            </div>
-
-            <div class="stats" aria-label="Profile statistics">
-              <button class="certificate-stat" data-tab-target="projects">
-                <lord-icon
-                  class="certificate-stat-icon"
-                  src="https://cdn.lordicon.com/wjdlpfml.json"
-                  state="in-reveal"
-                  aria-hidden="true"
-                ></lord-icon>
-                <strong>16</strong><span>Certificates</span>
-              </button>
-              <button class="article-stat" data-tab-target="projects">
-                <lord-icon
-                  class="article-stat-icon"
-                  src="https://cdn.lordicon.com/sobzmbzh.json"
-                  state="in-reveal"
-                  aria-hidden="true"
-                ></lord-icon>
-                <strong>4</strong><span>Articles</span>
-              </button>
-              <button class="study-stat" data-tab-target="about">
-                <lord-icon
-                  class="study-stat-icon"
-                  src="https://cdn.lordicon.com/rrbmabsx.json"
-                  state="in-reveal"
-                  aria-hidden="true"
-                ></lord-icon>
-                <strong>BCA</strong><span>AI & ML</span>
-              </button>
-            </div>
+            </div> -->
+          </div>
+          <div class="hero-photo-frame">
+            <img
+              class="hero-photo"
+              src="assets/img/profile.jpg"
+              alt="Navdeep Singh"
+              fetchpriority="high"
+            />
           </div>
         </div>
       </section>
@@ -192,25 +121,30 @@
 
           <div class="project-grid">
             <article class="project-card">
-              <div class="project-visual visual-violet">
-                <img
-                  class="project-screenshot"
-                  src="assets/img/project1.png"
-                  alt="Project 1 preview"
-                  loading="lazy"
-                />
-              </div>
+              <img
+                class="project-screenshot"
+                src="assets/project/ping coming soon page.png"
+                alt="Ping coming soon page"
+                loading="lazy"
+              />
             </article>
 
             <article class="project-card">
-              <div class="project-visual visual-lime">
-                <img
-                  class="project-screenshot"
-                  src="assets/img/project2.png"
-                  alt="Project 2 preview"
-                  loading="lazy"
-                />
-              </div>
+              <img
+                class="project-screenshot"
+                src="assets/project/results summary.png"
+                alt="Results summary project"
+                loading="lazy"
+              />
+            </article>
+
+            <article class="project-card">
+              <img
+                class="project-screenshot"
+                src="assets/project/bento grid.png"
+                alt="Bento grid project"
+                loading="lazy"
+              />
             </article>
           </div>
         </div>
@@ -272,485 +206,139 @@
           </p>
         </div>
 
-        <div class="certificate-masonry" id="certificateGrid">
-          <article
-            class="certificate-card"
-            data-title="HTML & CSS Bootcamp"
-            data-source="assets/certificate/HTML%20CSS%20BOOTCAMP.pdf"
-            data-preview="assets/certificate/previews/html-css.png"
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview HTML and CSS Bootcamp certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>HTML & CSS Bootcamp</strong><span>LetsUpgrade</span
-                ><small>Web development · 15 Mar 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/html-css.png"
-                alt="Preview of HTML and CSS Bootcamp certificate issued by LetsUpgrade"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Python Essentials"
-            data-source="assets/certificate/Python_essentials.pdf"
-            data-preview="assets/certificate/previews/python-essentials.png"
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Python Essentials certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Python Essentials</strong
-                ><span>Cisco Networking Academy</span
-                ><small>Programming · 20 Dec 2025</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/python-essentials.png"
-                alt="Preview of Python Essentials certificate issued by Cisco Networking Academy"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Pandas"
-            data-source="assets/certificate/Pandas.png"
-            data-preview="assets/certificate/Pandas.png"
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Pandas certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Pandas</strong><span>Kaggle</span
-                ><small>Data analysis · 11 Jul 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/Pandas.png"
-                alt="Preview of Pandas certificate issued by Kaggle"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="React Bootcamp"
-            data-source="assets/certificate/React%20Bootcamp.pdf"
-            data-preview="assets/certificate/previews/react.png"
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview React Bootcamp certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>React Bootcamp</strong><span>LetsUpgrade</span
-                ><small>Frontend development · 30 Mar 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/react.png"
-                alt="Preview of React Bootcamp certificate issued by LetsUpgrade"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Git & GitHub Bootcamp"
-            data-source="assets/certificate/Git%20and%20Github%20Bootcamp.pdf"
-            data-preview="assets/certificate/previews/git-github.png"
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Git and GitHub Bootcamp certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Git & GitHub Bootcamp</strong><span>LetsUpgrade</span
-                ><small>Developer tools · 28 Feb 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/git-github.png"
-                alt="Preview of Git and GitHub Bootcamp certificate issued by LetsUpgrade"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="C++ Advanced"
-            data-source="assets/certificate/C++.pdf"
-            data-preview="assets/certificate/previews/cpp.png"
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview C plus plus Advanced certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>C++ Advanced</strong
-                ><span>Cisco Networking Academy</span
-                ><small>Programming · 21 Jul 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/cpp.png"
-                alt="Preview of C plus plus Advanced certificate issued by Cisco Networking Academy"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="SQL Bootcamp"
-            data-source="assets/certificate/Sql%20Bootcamp.pdf"
-            data-preview="assets/certificate/previews/sql.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview SQL Bootcamp certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>SQL Bootcamp</strong><span>LetsUpgrade</span
-                ><small>Databases · 14 Mar 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/sql.png"
-                alt="Preview of SQL Bootcamp certificate issued by LetsUpgrade"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Introduction to NumPy"
-            data-source="assets/certificate/Numpy.pdf"
-            data-preview="assets/certificate/previews/numpy.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Introduction to NumPy certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Introduction to NumPy</strong
-                ><span>Simplilearn SkillUp</span
-                ><small>Data science · 10 Jul 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/numpy.png"
-                alt="Preview of Introduction to NumPy certificate issued by Simplilearn SkillUp"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Introduction to Modern AI"
-            data-source="assets/certificate/Introduction%20to%20Ai%20and%20Ml.pdf"
-            data-preview="assets/certificate/previews/ai-ml.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Introduction to Modern AI certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Introduction to Modern AI</strong
-                ><span>Cisco Networking Academy</span
-                ><small>Artificial intelligence · 9 Dec 2025</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/ai-ml.png"
-                alt="Preview of Introduction to Modern AI certificate issued by Cisco Networking Academy"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Introduction to Modern AI"
-            data-source="assets/certificate/ai_basic.pdf"
-            data-preview="assets/certificate/previews/ai-basics.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Introduction to Modern AI course certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Introduction to Modern AI</strong
-                ><span>Cisco Networking Academy</span
-                ><small>Artificial intelligence · 9 Dec 2025</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/ai-basics.png"
-                alt="Preview of Introduction to Modern AI course certificate issued by Cisco Networking Academy"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Time Management with AI"
-            data-source="assets/certificate/%20Boosting%20Your%20Time%20Management%20with%20AI%20Tools.pdf"
-            data-preview="assets/certificate/previews/time-management-ai.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Time Management with AI certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Time Management with AI</strong
-                ><span>LinkedIn Learning</span
-                ><small>Productivity · 22 Jul 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/time-management-ai.png"
-                alt="Preview of Time Management with AI certificate issued by LinkedIn Learning"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Build a Free Website with WordPress"
-            data-source="assets/certificate/wordpress.pdf"
-            data-preview="assets/certificate/previews/wordpress.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview WordPress project certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Build a Website with WordPress</strong
-                ><span>Coursera</span
-                ><small>Web development · 10 Jul 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/wordpress.png"
-                alt="Preview of WordPress project certificate issued by Coursera"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="National Financial Literacy Quiz"
-            data-source="assets/certificate/National%20Financial%20Literacy%20Quiz%202026.pdf"
-            data-preview="assets/certificate/previews/financial-literacy.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview National Financial Literacy Quiz certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>National Financial Literacy Quiz</strong
-                ><span>NISM & SEBI</span><small>Financial literacy · 2026</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/previews/financial-literacy.png"
-                alt="Preview of National Financial Literacy Quiz certificate issued by NISM and SEBI"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="CPR Awareness Week Quiz"
-            data-source="assets/certificate/Ministry%20of%20Youth%20Affairs%20&amp;%20Sports.png"
-            data-preview="assets/certificate/Ministry%20of%20Youth%20Affairs%20&amp;%20Sports.png"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview CPR Awareness Week Quiz certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>CPR Awareness Week Quiz</strong
-                ><span>Ministry of Youth Affairs & Sports</span
-                ><small>Community awareness · 28 Oct 2025</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/Ministry%20of%20Youth%20Affairs%20&amp;%20Sports.png"
-                alt="Preview of CPR Awareness Week Quiz certificate issued by the Ministry of Youth Affairs and Sports"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Nasha Mukt Bharat Abhiyaan"
-            data-source="assets/certificate/Nasha%20Mukt%20Bharat%20Abhiyaan.jpg"
-            data-preview="assets/certificate/Nasha%20Mukt%20Bharat%20Abhiyaan.jpg"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Nasha Mukt Bharat Abhiyaan certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Nasha Mukt Bharat Abhiyaan</strong
-                ><span>Ministry of Social Justice & Empowerment</span
-                ><small>Community initiative · Date not listed</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/certificate/Nasha%20Mukt%20Bharat%20Abhiyaan.jpg"
-                alt="Preview of Nasha Mukt Bharat Abhiyaan certificate issued by the Ministry of Social Justice and Empowerment"
-                loading="lazy"
-              />
-            </div>
-          </article>
-          <article
-            class="certificate-card"
-            data-title="Nasha Mukt Yuva for Viksit Bharat"
-            data-source="assets/img/Nasha%20Mukt%20Yuva%20for%20Viksit%20Bharat.jpeg"
-            data-preview="assets/img/Nasha%20Mukt%20Yuva%20for%20Viksit%20Bharat.jpeg"
-            hidden
-          >
-            <button
-              class="certificate-card-main"
-              type="button"
-              aria-label="Preview Nasha Mukt Yuva for Viksit Bharat certificate"
-            >
-              <span class="credential-icon" aria-hidden="true">✓</span
-              ><span class="certificate-copy"
-                ><strong>Nasha Mukt Yuva for Viksit Bharat</strong
-                ><span>Ministry of Youth Affairs & Sports</span
-                ><small>Community initiative · Date not listed</small
-                ><span class="certificate-view"
-                  >View Certificate <i aria-hidden="true">↗</i></span
-                ></span
-              >
-            </button>
-            <div class="certificate-preview" aria-hidden="true">
-              <img
-                src="assets/img/Nasha%20Mukt%20Yuva%20for%20Viksit%20Bharat.jpeg"
-                alt="Preview of Nasha Mukt Yuva for Viksit Bharat certificate issued by the Ministry of Youth Affairs and Sports"
-                loading="lazy"
-              />
-            </div>
-          </article>
-        </div>
-        <button
-          class="button certificates-toggle"
-          id="certificatesToggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="certificateGrid"
+        <div
+          class="certificate-table-scroll"
+          role="region"
+          aria-label="Certificate courses table"
+          tabindex="0"
         >
-          View All
-        </button>
+          <table class="certificate-table">
+            <caption>Completed courses and certificates</caption>
+            <thead>
+              <tr>
+                <th scope="col">Course</th>
+                <th scope="col">About the course</th>
+                <th scope="col">Provider</th>
+                <th scope="col">Area</th>
+                <th scope="col">Completed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">HTML &amp; CSS Bootcamp</th>
+                <td>Learned to structure web pages with HTML and style them with CSS.</td>
+                <td>LetsUpgrade</td>
+                <td><span class="certificate-area">Web development</span></td>
+                <td>15 Mar 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">Python Essentials</th>
+                <td>Covered Python fundamentals including syntax, data types and core programming concepts.</td>
+                <td>Cisco Networking Academy</td>
+                <td><span class="certificate-area">Programming</span></td>
+                <td>20 Dec 2025</td>
+              </tr>
+              <tr>
+                <th scope="row">Pandas</th>
+                <td>Explored working with tabular data and data analysis using Pandas.</td>
+                <td>Kaggle</td>
+                <td><span class="certificate-area">Data analysis</span></td>
+                <td>11 Jul 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">React Bootcamp</th>
+                <td>Introduced building interactive user interfaces with React components.</td>
+                <td>LetsUpgrade</td>
+                <td><span class="certificate-area">Frontend development</span></td>
+                <td>30 Mar 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">Git &amp; GitHub Bootcamp</th>
+                <td>Covered version control with Git and managing repositories with GitHub.</td>
+                <td>LetsUpgrade</td>
+                <td><span class="certificate-area">Developer tools</span></td>
+                <td>28 Feb 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">C++ Advanced</th>
+                <td>Developed further programming skills using C++ and its language features.</td>
+                <td>Cisco Networking Academy</td>
+                <td><span class="certificate-area">Programming</span></td>
+                <td>21 Jul 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">SQL Bootcamp</th>
+                <td>Learned to query and work with data stored in relational databases.</td>
+                <td>LetsUpgrade</td>
+                <td><span class="certificate-area">Databases</span></td>
+                <td>14 Mar 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">Introduction to NumPy</th>
+                <td>Explored numerical computing with NumPy arrays and data operations.</td>
+                <td>Simplilearn SkillUp</td>
+                <td><span class="certificate-area">Data science</span></td>
+                <td>10 Jul 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">Introduction to Modern AI</th>
+                <td>An introduction to artificial intelligence and machine learning concepts.</td>
+                <td>Cisco Networking Academy</td>
+                <td><span class="certificate-area">Artificial intelligence</span></td>
+                <td>9 Dec 2025</td>
+              </tr>
+              <tr>
+                <th scope="row">Introduction to Modern AI</th>
+                <td>An introduction to artificial intelligence and machine learning concepts.</td>
+                <td>Cisco Networking Academy</td>
+                <td><span class="certificate-area">Artificial intelligence</span></td>
+                <td>9 Dec 2025</td>
+              </tr>
+              <tr>
+                <th scope="row">Time Management with AI</th>
+                <td>Explored using AI tools to support time management and productivity.</td>
+                <td>LinkedIn Learning</td>
+                <td><span class="certificate-area">Productivity</span></td>
+                <td>22 Jul 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">Build a Website with WordPress</th>
+                <td>Learned to create and publish a website using WordPress.</td>
+                <td>Coursera</td>
+                <td><span class="certificate-area">Web development</span></td>
+                <td>10 Jul 2026</td>
+              </tr>
+              <tr>
+                <th scope="row">National Financial Literacy Quiz</th>
+                <td>Covered foundational topics in financial literacy.</td>
+                <td>NISM &amp; SEBI</td>
+                <td><span class="certificate-area">Financial literacy</span></td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <th scope="row">CPR Awareness Week Quiz</th>
+                <td>Completed a quiz focused on CPR and community awareness.</td>
+                <td>Ministry of Youth Affairs &amp; Sports</td>
+                <td><span class="certificate-area">Community awareness</span></td>
+                <td>28 Oct 2025</td>
+              </tr>
+              <tr>
+                <th scope="row">Nasha Mukt Bharat Abhiyaan</th>
+                <td>Recognized participation in the Nasha Mukt Bharat community initiative.</td>
+                <td>Ministry of Social Justice &amp; Empowerment</td>
+                <td><span class="certificate-area">Community initiative</span></td>
+                <td>Not listed</td>
+              </tr>
+              <tr>
+                <th scope="row">Nasha Mukt Yuva for Viksit Bharat</th>
+                <td>Recognized participation in a youth-led substance-free India initiative.</td>
+                <td>Ministry of Youth Affairs &amp; Sports</td>
+                <td><span class="certificate-area">Community initiative</span></td>
+                <td>Not listed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
 
       <section
@@ -1033,19 +621,16 @@
         <p class="eyebrow">Let’s connect</p>
         <h2>Learning, building or sharing an idea?</h2>
         <p>
-          I’m happy to connect with fellow students, developers and people
+          I'm happy to connect with fellow students, developers and people
           exploring technology and AI.
         </p>
-        <a
-          class="button button-contact"
+        <a class="button button-contact"
           href="https://www.linkedin.com/in/navdeep-singh-51b573356/"
           target="_blank"
           rel="noreferrer"
-          >Connect on LinkedIn <span aria-hidden="true">↗</span></a
-        >
+          >Connect on LinkedIn</a>
         <span class="contact-note"
-          ><i></i> Open to learning and collaboration</span
-        >
+          ><i></i> Open to learning and collaboration</span>
       </section>
     </main>
 
@@ -1062,36 +647,6 @@
       </div>
     </footer>
 
-    <dialog
-      class="certificate-modal"
-      id="certificateModal"
-      aria-labelledby="certificateModalTitle"
-    >
-      <div class="certificate-modal-bar">
-        <div>
-          <small>Certificate preview</small>
-          <h2 id="certificateModalTitle"></h2>
-        </div>
-        <button
-          class="certificate-modal-close"
-          type="button"
-          aria-label="Close certificate preview"
-        >
-          ×
-        </button>
-      </div>
-      <div class="certificate-modal-image-wrap">
-        <img id="certificateModalImage" alt="" loading="lazy" />
-      </div>
-      <a
-        class="button certificate-original-link"
-        id="certificateOriginalLink"
-        href="#"
-        target="_blank"
-        rel="noreferrer"
-        >Open original certificate <span aria-hidden="true">↗</span></a
-      >
-    </dialog>
     <script src="script.js"></script>
   </body>
 </html>
