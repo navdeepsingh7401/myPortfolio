@@ -380,9 +380,7 @@ h1 {
   font-size: 14px;
 }
 .project-grid {
-  display: grid;
-  grid-auto-columns: minmax(0, calc((100% - 22px) / 2));
-  grid-auto-flow: column;
+  display: flex;
   gap: 22px;
   overflow-x: auto;
   overflow-y: hidden;
@@ -400,6 +398,7 @@ h1 {
   background: var(--violet);
 }
 .project-card {
+  flex: 0 0 calc((100% - 22px) / 2);
   min-width: 0;
   scroll-snap-align: start;
 }
@@ -1248,7 +1247,10 @@ body.dark .tags span {
 }
 @media (max-width: 1023px) and (min-width: 521px) {
   .project-grid {
-    grid-auto-columns: minmax(0, 78%);
+    display: flex;
+  }
+  .project-card {
+    flex-basis: 78%;
   }
 }
 @media (min-width: 801px) and (max-width: 900px) {
@@ -1427,12 +1429,16 @@ body.dark .tags span {
     padding-top: 35px;
   }
   .project-grid {
+    display: grid;
     grid-auto-columns: auto;
     grid-auto-flow: row;
     grid-template-columns: 1fr;
     overflow-x: visible;
     padding-bottom: 0;
     scroll-snap-type: none;
+  }
+  .project-card {
+    flex-basis: auto;
   }
   .mock-window {
     width: 83%;
